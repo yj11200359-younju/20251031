@@ -1,0 +1,115 @@
+:root {
+  color-scheme: light;
+  --bg: #f8f9fb;
+  --surface: #ffffff;
+  --primary: #1c64f2;
+  --accent: #e94e77;
+  --text: #2d3748;
+  --muted: #718096;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+}
+
+header p {
+  color: var(--muted);
+}
+
+section {
+  background-color: var(--surface);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 12px 30px rgba(28, 100, 242, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  border-bottom: 2px solid rgba(28, 100, 242, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+figure img {
+  width: min(100%, 820px);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+article {
+  background: linear-gradient(145deg, rgba(28, 100, 242, 0.08), rgba(233, 78, 119, 0.08));
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+article h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+article ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+article li {
+  padding: 0.25rem 0;
+}
+
+code {
+  background-color: rgba(45, 55, 72, 0.1);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-family: "Fira Code", "IBM Plex Mono", monospace;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding-bottom: 3rem;
+}
